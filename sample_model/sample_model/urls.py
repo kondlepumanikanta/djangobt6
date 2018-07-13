@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+#from django.http import HttpResponse
+from app1.views import customers,products,sales
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^customers/', customers),
+    url(r'^products/', products),
+    url(r'^sales/', sales),
 ]
