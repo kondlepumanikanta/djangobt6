@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from app1.views import studhall
+from app1.views import studhall,enquiries,expenses
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/', studhall),
+    url(r'^studyhalls/', studhall),
+    url(r'^enquiries/', enquiries),
+    url(r'^expenses/', expenses),
+
+    # url(r'^studyhalls/', stud),
 ]
