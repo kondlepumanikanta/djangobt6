@@ -9,7 +9,12 @@ from app1.models import Expenses
 
 # Create your views here.
 def studhall(request):
+	
 	stud=StudyHall.objects.all()
+	expns=Expenses.objects.all()
+	enq=Enquiries.objects.all()
+	#return render(request,"app1/index.html",{"halls":studyhalls,"exps":expenses,"enqs":enquiries})
+
 	#return render(request,"app1/index.html")
 	return render(request,"app1/index.html",{"studyhall_data":stud})
 def enquiries(request):

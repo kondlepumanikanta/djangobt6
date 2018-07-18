@@ -25,16 +25,25 @@
       <h3>Study halls</h3>
       <p>we r in study halls tab</p>
       <p>{{studyhall_data}}</p>
+      {% for hall in studyhall_data%}
+        <p>{{hall.name}},{{hall.area}}</p>
+      {% endfor %}
     </div>
     <div id="menu2" class="tab-pane fade">
       <h3>Enquiries</h3>
       <p>we r in enquiries tab</p>
       <p>{{enquiries_data}}</p>
+      {% for hall in enquirie_data%}
+        <p>{{hall.name}},{{hall.course}}</p>
+      {% endfor %}
     </div>
     <div id="menu3" class="tab-pane fade">
       <h3>Expenses</h3>
       <p>we r in expenses tab</p>
       <p>{{expenses_data}}</p>
+      {% for hall in expenses_data%}
+        <p>{{hall.name}},{{hall.dateofexp}}</p>
+      {% endfor %}
     </div>
   </div>
 </div>
